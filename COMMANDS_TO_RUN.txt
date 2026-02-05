@@ -1,0 +1,82 @@
+# CORRECT COMMANDS TO RUN
+
+## ⚠️ COPY THESE EXACT COMMANDS (NOT THE MARKDOWN TEXT!)
+
+---
+
+## Option 1: Use the Quick Start Script (EASIEST)
+
+bash start.sh
+
+---
+
+## Option 2: Run Commands Individually
+
+# Command 1: Install dependencies
+npm install
+
+# Command 2: Push database schema
+npm run db:push
+
+# Command 3: Start server (on port 5001 to avoid conflicts)
+npm run dev
+
+---
+
+## Option 3: All in One Line (COPY THIS EXACTLY)
+
+npm install && npm run db:push && npm run dev
+
+---
+
+## If Port 5001 is ALSO Busy
+
+# Use a different port:
+PORT=3000 npm run dev
+
+# Or kill processes:
+bash scripts/kill-port.sh
+
+---
+
+## What You'll See When It Works
+
+✓ built in XXXms
+
+VITE v7.x.x  ready in XXX ms
+
+➜  Local:   http://localhost:5001/
+➜  press h + enter to show help
+
+---
+
+## Open in Browser
+
+http://localhost:5001
+
+---
+
+## IMPORTANT NOTES
+
+1. Port changed to 5001 (not 5000) to avoid conflicts
+2. Copy commands EXACTLY as shown above
+3. Don't copy markdown formatting like ** or ---
+4. Press Enter after each command
+5. Wait for each command to finish before running the next
+
+---
+
+## For Replit Users
+
+If you're using Replit, the webview will open automatically.
+Just look for the browser preview pane.
+
+---
+
+## Still Getting Port Errors?
+
+Try these ports in order:
+- PORT=5001 npm run dev
+- PORT=3000 npm run dev
+- PORT=8080 npm run dev
+- PORT=4000 npm run dev
